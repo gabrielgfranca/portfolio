@@ -8,7 +8,7 @@
 body{
     background:#0f1117;
     color:white;
-    height:100vh;
+    height: 1000px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -17,20 +17,20 @@ body{
 .container{
     width:1250px;
     display:grid;
-    grid-template-columns: 300px 2fr 280px;
+    grid-template-columns: 300px 600px 300px;
     gap:20px;
 }
 
 .card{
     background:rgba(45, 45, 56, 0.8);
-    border-radius:12px;
+    border-radius:20px;
     padding:20px;
     box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 .profile{
     background:#2e52b8;
-    border-radius:16px;
+    border-radius:20px;
     padding:25px;
     display:flex;
     flex-direction:column;
@@ -77,6 +77,10 @@ body{
     cursor:pointer;
 }
 
+
+
+
+
 .icon-box {
     background:#1C1C25;
     border-radius:10px;
@@ -87,7 +91,7 @@ body{
 }
 
 .skills-marquee{
-    width:100%;
+    width: 1250px;
     overflow:hidden;
     position:relative;
     height:60px;
