@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
 
     color:white;
-    height: 1000px;
+    height: 100vh;
 
     display:flex;
     justify-content:center;
@@ -20,9 +20,11 @@ body{
 }
 
 .container{
-    width:1250px;
+    max-width:1350px;
+    width: 100%;
+    min-height:80vh;
     display:grid;
-    grid-template-columns: 300px 600px 300px;
+    grid-template-columns: 350px 1fr 350px;
     gap:20px;
 }
 
