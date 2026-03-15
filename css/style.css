@@ -6,9 +6,14 @@
 }
 
 body{
-    background:#0f1117;
+    background-image: url("/assets/images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color:white;
     height: 1000px;
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -91,7 +96,7 @@ body{
 }
 
 .skills-marquee{
-    width: 1250px;
+    width: 100%;
     overflow:hidden;
     position:relative;
     height:60px;
