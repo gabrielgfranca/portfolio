@@ -22,7 +22,7 @@ body{
 }
 
 .card{
-    background:#1a1c24;
+    background:rgba(45, 45, 56, 0.8);
     border-radius:12px;
     padding:20px;
     box-shadow:0 4px 10px rgba(0,0,0,0.3);
@@ -76,4 +76,45 @@ body{
     border-radius:10px;
     cursor:pointer;
 }
-    
+
+.icon-box {
+    background:#1C1C25;
+    border-radius:10px;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.skills-marquee{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    height:60px;
+}
+
+.skills-track{
+    position:absolute;
+    display:flex;
+    gap:25px;
+    margin:5px;
+    width:max-content;
+    animation:scroll 15s linear infinite;
+}
+
+.skills-track img{
+    width:50px;
+    height:50px;
+    flex-shrink:0;
+    filter: brightness(0) invert(1);
+    transition:0.2s;
+}
+
+@keyframes scroll {
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-50%); }
+}
+
+.skills-track:hover{
+    animation-play-state: paused;
+}
